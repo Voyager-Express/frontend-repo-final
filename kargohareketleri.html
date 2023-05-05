@@ -5,14 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kargo Hareketleri</title>
+    <link rel="icon" type="favicon" sizes="32x32" href="favicon.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="kargo.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+             background-image: url('planet.png');
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-position: center 90px;
+             background-attachment: fixed;
+         }
+ 
+     </style>
 </head>
 <body>
     <div id="navbar-container"></div>
     <main>
         <div class="dropdown float-end" style="margin-right: 20px;">
-            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #3e9159; color: white; font-weight: bold;">
               Hesabım
               <img src="css/gear.svg" height="25" width="25" class="ms-2">
             </button>
@@ -26,22 +38,33 @@
         <div class="container mt-5 text-center">
             <h3>Kargo Hareketleri</h3>
             <div style="height:5em;"></div>
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar" style="width: 25%">Gönderi Alındı</div>
-            </div>
-            <div class="mb-3"></div>
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar" style="width: 50%">Transfer Sürecinde</div>
-            </div>
-            <div class="mb-3"></div>
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar" style="width: 75%">Dağıtıma Çıktı</div>
-            </div>
-            <div class="mb-3"></div>
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar" style="width: 100%">Teslim Edildi</div>
-            </div>
-            <div class="mb-5"></div>
+            <div class="row">
+                <div class="col-md-3">
+                  <div class="step step-received active">  <!--aktif adım -->
+                    <img src="0.png">
+                    <p>Gönderi Alındı</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="step step-transfer">
+                    <img src="1.png">
+                    <p>Transfer Sürecinde</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="step step-delivery">
+                    <img src="2.png">
+                    <p>Dağıtıma Çıktı</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="step step-delivered"> 
+                    <img src="3.png">
+                    <p>Teslim Edildi</p>
+                  </div>
+                </div>
+              </div>
+        <div class="mb-5"></div>
             <h3>Detay</h3>
             <div class="row justify-content-center">
                 <div class="col-md-6">
@@ -70,7 +93,6 @@
                 </div>
             </div>
         </div>
-        
     </main>
 
     <script src="js/bootstrap.bundle.min.js"></script>

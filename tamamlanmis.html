@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tamamlanmış Kargolar</title>
+    <link rel="icon" type="favicon" sizes="32x32" href="favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -13,7 +14,7 @@
     <div id="navbar-container"></div>
     <main>
       <div class="dropdown float-end" style="margin-right: 20px;">
-        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #3e9159; color: white; font-weight: bold;">
           Hesabım
           <img src="css/gear.svg" height="25" width="25" class="ms-2">
         </button>
@@ -25,7 +26,7 @@
         </ul>
       </div>
       <div class="col-md-3" style="margin-left: 20px;">
-        <a href="adminpaneli.html" class="btn btn-primary btn-lg">Admin Paneli</a>
+        <a href="adminpaneli.html" class="btn btn-lg" style="background-color: #3e9159; color: white; font-weight: bold;">Admin Paneli</a>
       </div>
       <div class="container mt-5 text-center">
         <h3>Tamamlanmış Kargolar</h3>
@@ -38,6 +39,7 @@
               <th scope="col">İl</th>
               <th scope="col">Kurye İd</th>
               <th scope="col">Kurye Adı</th>
+              <th scope="col">Detay</th>
             </tr>
           </thead>
           <tbody>
@@ -48,6 +50,7 @@
               <td>İstanbul</td>
               <td>1515</td>
               <td>Ali Talha</td>
+              <td><a href="kargodetay.html"><button type="button" class="btn btn-sm" data-toggle="modal" data-target="#detayModal1" style="background-color: #3e9159; color: white; font-weight: bold;">Detay</button></a></td>
             </tr>
             <tr>
               <th scope="row">2</th>
@@ -56,6 +59,7 @@
               <td>İstanbul</td>
               <td>1515</td>
               <td>Ali Talha</td>
+              <td><a href="kargodetay.html"><button type="button" class="btn btn-sm" data-toggle="modal" data-target="#detayModal1" style="background-color: #3e9159; color: white; font-weight: bold;">Detay</button></a></td>
             </tr>
             <tr>
               <th scope="row">3</th>
@@ -64,6 +68,7 @@
               <td>İstanbul</td>
               <td>1515</td>
               <td>Ali Talha</td>
+              <td><a href="kargodetay.html"><button type="button" class="btn btn-sm" data-toggle="modal" data-target="#detayModal1" style="background-color: #3e9159; color: white; font-weight: bold;">Detay</button></a></td>
             </tr>
           </tbody>
         </table>
